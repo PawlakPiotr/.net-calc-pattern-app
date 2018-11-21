@@ -1,0 +1,10 @@
+c:\users\s15182\source\repos\Calc\Calc\bin\Debug\Calc.exe.config
+c:\users\s15182\source\repos\Calc\Calc\bin\Debug\Calc.exe
+c:\users\s15182\source\repos\Calc\Calc\bin\Debug\Calc.pdb
+c:\users\s15182\source\repos\Calc\Calc\obj\Debug\Calc.csprojAssemblyReference.cache
+c:\users\s15182\source\repos\Calc\Calc\obj\Debug\Calc.CalcForm.resources
+c:\users\s15182\source\repos\Calc\Calc\obj\Debug\Calc.Properties.Resources.resources
+c:\users\s15182\source\repos\Calc\Calc\obj\Debug\Calc.csproj.GenerateResource.cache
+c:\users\s15182\source\repos\Calc\Calc\obj\Debug\Calc.csproj.CoreCompileInputs.cache
+c:\users\s15182\source\repos\Calc\Calc\obj\Debug\Calc.exe
+c:\users\s15182\source\repos\Calc\Calc\obj\Debug\Calc.pdb
