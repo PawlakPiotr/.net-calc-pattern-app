@@ -8,3 +8,13 @@ c:\users\s15182\source\repos\Calc\Calc\obj\Debug\Calc.csproj.GenerateResource.ca
 c:\users\s15182\source\repos\Calc\Calc\obj\Debug\Calc.csproj.CoreCompileInputs.cache
 c:\users\s15182\source\repos\Calc\Calc\obj\Debug\Calc.exe
 c:\users\s15182\source\repos\Calc\Calc\obj\Debug\Calc.pdb
+C:\Users\PiotrPawlak\Desktop\Calc\Calc\bin\Debug\Calc.exe.config
+C:\Users\PiotrPawlak\Desktop\Calc\Calc\bin\Debug\Calc.exe
+C:\Users\PiotrPawlak\Desktop\Calc\Calc\bin\Debug\Calc.pdb
+C:\Users\PiotrPawlak\Desktop\Calc\Calc\obj\Debug\Calc.CalcForm.resources
+C:\Users\PiotrPawlak\Desktop\Calc\Calc\obj\Debug\Calc.Forms.History.History.resources
+C:\Users\PiotrPawlak\Desktop\Calc\Calc\obj\Debug\Calc.Properties.Resources.resources
+C:\Users\PiotrPawlak\Desktop\Calc\Calc\obj\Debug\Calc.csproj.GenerateResource.cache
+C:\Users\PiotrPawlak\Desktop\Calc\Calc\obj\Debug\Calc.csproj.CoreCompileInputs.cache
+C:\Users\PiotrPawlak\Desktop\Calc\Calc\obj\Debug\Calc.exe
+C:\Users\PiotrPawlak\Desktop\Calc\Calc\obj\Debug\Calc.pdb
