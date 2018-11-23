@@ -13,7 +13,7 @@ namespace Calc
 {
     public partial class CalcForm : Form
     {
-        List<KeyValuePair<string, DateTime>> history;
+        public static List<KeyValuePair<string, DateTime>> history;
 
         public CalcForm()
         {

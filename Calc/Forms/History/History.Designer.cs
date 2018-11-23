@@ -41,6 +41,7 @@
             this.btn_clrHistory.TabIndex = 0;
             this.btn_clrHistory.Text = "CLEAR HISTORY";
             this.btn_clrHistory.UseVisualStyleBackColor = true;
+            this.btn_clrHistory.Click += new System.EventHandler(this.btn_clrHistory_Click);
             // 
             // historyGrid
             // 

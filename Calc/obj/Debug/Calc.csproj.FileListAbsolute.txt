@@ -18,3 +18,4 @@ C:\Users\PiotrPawlak\Desktop\Calc\Calc\obj\Debug\Calc.csproj.GenerateResource.ca
 C:\Users\PiotrPawlak\Desktop\Calc\Calc\obj\Debug\Calc.csproj.CoreCompileInputs.cache
 C:\Users\PiotrPawlak\Desktop\Calc\Calc\obj\Debug\Calc.exe
 C:\Users\PiotrPawlak\Desktop\Calc\Calc\obj\Debug\Calc.pdb
+C:\Users\PiotrPawlak\Desktop\Calc\Calc\obj\Debug\Calc.csprojResolveAssemblyReference.cache
