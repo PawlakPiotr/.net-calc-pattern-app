@@ -58,6 +58,7 @@
     <Compile Include="Forms\History\History.Designer.cs">
       <DependentUpon>History.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Core\ICoreHistory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Calc\Calc.resx">
