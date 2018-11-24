@@ -1,4 +1,5 @@
 ﻿using Calc.Forms.History;
+using Calc.Model.Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,11 +16,14 @@ namespace Calc
     public partial class CalcForm : Form
     {
         public static List<KeyValuePair<string, DateTime>> history;
+        public Operation operation;
+        public List<string> math;
 
         public CalcForm()
         {
             InitializeComponent();
             history = new List<KeyValuePair<string, DateTime>>();
+            math = new List<string>();
         }
 
         private void btn1_Click(object sender, EventArgs e)
@@ -34,9 +38,7 @@ namespace Calc
 
         private void btnResult_Click(object sender, EventArgs e)
         {
-            KeyValuePair<string, DateTime> x = new KeyValuePair<string, DateTime>("XDDDD", DateTime.Now);
-            history.Add(x);
-            CalcResult_txtBox.Text = x.Key.ToString();
+            operation = new Operation(Operation_txtBox.Text, history);
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -93,6 +95,7 @@ namespace Calc
         private void btnAddition_Click(object sender, EventArgs e)
         {
             ShowValue("+", Operation_txtBox);
+            math.Add("+");
         }
 
         void ShowValue<T>(T val, TextBox textBox)
@@ -103,16 +106,19 @@ namespace Calc
         private void btnDivision_Click(object sender, EventArgs e)
         {
             ShowValue("-", Operation_txtBox);
+            math.Add("-");
         }
 
         private void btnMultiply_Click(object sender, EventArgs e)
         {
             ShowValue("*", Operation_txtBox);
+            math.Add("*");
         }
 
         private void btnDivide_Click(object sender, EventArgs e)
         {
             ShowValue("/", Operation_txtBox);
+            math.Add("/");
         }
 
         private void btnPoint_Click(object sender, EventArgs e)
@@ -125,6 +131,17 @@ namespace Calc
             var dialog = new History();
             dialog.historyGrid.DataSource = history;
             dialog.ShowDialog();
+        }
+
+        private void CalcResult_txtBox_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Operation_txtBox_TextChanged(object sender, EventArgs e)
+        {
+            //var x = operation.GetReult();
+            CalcResult_txtBox.Text = Operation_txtBox.Text;
         }
     }
 }

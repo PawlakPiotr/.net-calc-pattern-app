@@ -161,6 +161,7 @@
             this.Operation_txtBox.Size = new System.Drawing.Size(288, 82);
             this.Operation_txtBox.TabIndex = 10;
             this.Operation_txtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Operation_txtBox.TextChanged += new System.EventHandler(this.Operation_txtBox_TextChanged);
             // 
             // btnPoint
             // 
@@ -268,6 +269,7 @@
             this.CalcResult_txtBox.Size = new System.Drawing.Size(258, 29);
             this.CalcResult_txtBox.TabIndex = 19;
             this.CalcResult_txtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CalcResult_txtBox.TextChanged += new System.EventHandler(this.CalcResult_txtBox_TextChanged);
             // 
             // CalcForm
             // 
