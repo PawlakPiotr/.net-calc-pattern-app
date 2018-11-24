@@ -33,6 +33,7 @@ namespace Calc.Model.Data
                 res.Text = x;
             }
         }
+
         // [ICoreResult]
         public string GetResult<T>(T value)
         {
