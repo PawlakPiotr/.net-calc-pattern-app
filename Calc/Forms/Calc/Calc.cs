@@ -16,7 +16,7 @@ namespace Calc
     public partial class CalcForm : Form
     {
         public static List<KeyValuePair<string, DateTime>> history;
-        public Operation operation;
+        public Operation operation, val;
         public List<string> math;
 
         public CalcForm()
@@ -24,6 +24,7 @@ namespace Calc
             InitializeComponent();
             history = new List<KeyValuePair<string, DateTime>>();
             math = new List<string>();
+            val = new Operation("", history);
         }
 
         private void btn1_Click(object sender, EventArgs e)
@@ -39,6 +40,9 @@ namespace Calc
         private void btnResult_Click(object sender, EventArgs e)
         {
             operation = new Operation(Operation_txtBox.Text, history);
+            string x = val.GetResult(Operation_txtBox.Text);
+            Operation_txtBox.Text = x;
+            CalcResult_txtBox.Text = null;
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -140,8 +144,9 @@ namespace Calc
 
         private void Operation_txtBox_TextChanged(object sender, EventArgs e)
         {
-            //var x = operation.GetReult();
-            CalcResult_txtBox.Text = Operation_txtBox.Text;
+            val.onChange(
+                    val, Operation_txtBox, CalcResult_txtBox
+                );
         }
     }
 }

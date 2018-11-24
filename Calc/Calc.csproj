@@ -59,6 +59,8 @@
       <DependentUpon>History.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Core\ICoreHistory.cs" />
+    <Compile Include="Model\Core\ICoreResult.cs" />
+    <Compile Include="Model\Core\ICoreState.cs" />
     <Compile Include="Model\Data\Operation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
