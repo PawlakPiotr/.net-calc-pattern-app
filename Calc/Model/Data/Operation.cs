@@ -1,4 +1,5 @@
 ﻿using Calc.Model.Core;
+using Calc.Model.Pattern;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -9,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Calc.Model.Data
 {
-    public class Operation : ICoreState, ICoreResult, ICoreHistory
+    public class Operation : ICoreResult, ICoreHistory
     {
         List<KeyValuePair<string, DateTime>> hist;
-        string result;
-        char[] mathArray = new char[4]{ '+', '-', '*', '/'};
+        public string result;
+        public char[] mathArray = new char[4]{ '+', '-', '*', '/'};
 
         public Operation(string val, List<KeyValuePair<string, DateTime>> history)
         {
@@ -21,17 +22,10 @@ namespace Calc.Model.Data
             result = GetResult(val);
             AddToHistory(result);
         }
-
-        // [ICoreState] 
-        public void onChange(Operation val, TextBox op, TextBox res)
+        public void GetCalcState(Operation val, TextBox op, TextBox res)
         {
-            if (op.Text.Length >= 3 
-                && op.Text.Last() != mathArray[0] && op.Text.Last() != mathArray[1]
-                && op.Text.Last() != mathArray[2] && op.Text.Last() != mathArray[3])
-            {
-                string x = val.GetResult(op.Text);
-                res.Text = x;
-            }
+            CalcState cst = new CalcState(val);
+            cst.GetCalcState(val, op, res);
         }
 
         // [ICoreResult]
@@ -53,5 +47,16 @@ namespace Calc.Model.Data
         public void ClearHistory(List<KeyValuePair<string, DateTime>> history) => history.Clear();
 
         public List<KeyValuePair<string, DateTime>> GetHistory() => hist;
+
+
+        public bool NumberNext(Operation val, TextBox op, TextBox res)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool SymbolNext(Operation val, TextBox op, TextBox res)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

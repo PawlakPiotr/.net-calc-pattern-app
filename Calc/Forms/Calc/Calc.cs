@@ -133,7 +133,7 @@ namespace Calc
         private void btnHistory_Click(object sender, EventArgs e)
         {
             var dialog = new History();
-            dialog.historyGrid.DataSource = history;
+            dialog.historyGrid.DataSource = operation.GetHistory();
             dialog.ShowDialog();
         }
 
@@ -144,8 +144,10 @@ namespace Calc
 
         private void Operation_txtBox_TextChanged(object sender, EventArgs e)
         {
-            val.onChange(
-                    val, Operation_txtBox, CalcResult_txtBox
+            val.GetCalcState(
+                    val, 
+                    Operation_txtBox, 
+                    CalcResult_txtBox
                 );
         }
     }

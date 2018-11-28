@@ -19,3 +19,14 @@ C:\Users\PiotrPawlak\Desktop\Calc\Calc\obj\Debug\Calc.csproj.CoreCompileInputs.c
 C:\Users\PiotrPawlak\Desktop\Calc\Calc\obj\Debug\Calc.exe
 C:\Users\PiotrPawlak\Desktop\Calc\Calc\obj\Debug\Calc.pdb
 C:\Users\PiotrPawlak\Desktop\Calc\Calc\obj\Debug\Calc.csprojResolveAssemblyReference.cache
+C:\Users\s15182\Desktop\New folder\Calc\Calc\bin\Debug\Calc.exe.config
+C:\Users\s15182\Desktop\New folder\Calc\Calc\bin\Debug\Calc.exe
+C:\Users\s15182\Desktop\New folder\Calc\Calc\bin\Debug\Calc.pdb
+C:\Users\s15182\Desktop\New folder\Calc\Calc\obj\Debug\Calc.csprojAssemblyReference.cache
+C:\Users\s15182\Desktop\New folder\Calc\Calc\obj\Debug\Calc.CalcForm.resources
+C:\Users\s15182\Desktop\New folder\Calc\Calc\obj\Debug\Calc.Forms.History.History.resources
+C:\Users\s15182\Desktop\New folder\Calc\Calc\obj\Debug\Calc.Properties.Resources.resources
+C:\Users\s15182\Desktop\New folder\Calc\Calc\obj\Debug\Calc.csproj.GenerateResource.cache
+C:\Users\s15182\Desktop\New folder\Calc\Calc\obj\Debug\Calc.csproj.CoreCompileInputs.cache
+C:\Users\s15182\Desktop\New folder\Calc\Calc\obj\Debug\Calc.exe
+C:\Users\s15182\Desktop\New folder\Calc\Calc\obj\Debug\Calc.pdb

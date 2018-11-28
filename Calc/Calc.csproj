@@ -62,6 +62,8 @@
     <Compile Include="Model\Core\ICoreResult.cs" />
     <Compile Include="Model\Core\ICoreState.cs" />
     <Compile Include="Model\Data\Operation.cs" />
+    <Compile Include="Model\Data\Result.cs" />
+    <Compile Include="Model\Pattern\CalcState.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Calc\Calc.resx">

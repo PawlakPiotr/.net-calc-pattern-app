@@ -11,5 +11,7 @@ namespace Calc.Model.Core
     interface ICoreState
     {
         void onChange(Operation val, TextBox op, TextBox res);
+        bool NumberNext(Operation val, TextBox op);
+        bool SymbolNext(Operation val, TextBox op);
     }
 }
