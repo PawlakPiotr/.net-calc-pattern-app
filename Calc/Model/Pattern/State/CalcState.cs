@@ -12,9 +12,13 @@ namespace Calc.Model.Pattern
     public class CalcState : ICoreState
     {
         Operation oprt;
-        public CalcState(Operation op)
+        public List<string> PreviousValue;
+
+        public CalcState(Operation op, string action)
         {
+            PreviousValue = new List<string>();
             this.oprt = op;
+            PreviousValue.Add(action);
         }
 
         public void GetCalcState(Operation val, TextBox op, TextBox res)

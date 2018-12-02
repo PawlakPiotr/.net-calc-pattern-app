@@ -24,7 +24,7 @@ namespace Calc.Model.Data
         }
         public void GetCalcState(Operation val, TextBox op, TextBox res)
         {
-            CalcState cst = new CalcState(val);
+            CalcState cst = new CalcState(val, val.result);
             cst.GetCalcState(val, op, res);
         }
 

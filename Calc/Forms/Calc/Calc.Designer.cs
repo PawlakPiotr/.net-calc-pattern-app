@@ -48,6 +48,7 @@
             this.btnAddition = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.CalcResult_txtBox = new System.Windows.Forms.TextBox();
+            this.btnExt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn1
@@ -251,7 +252,7 @@
             this.btnClear.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnClear.Location = new System.Drawing.Point(168, 12);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(145, 32);
+            this.btnClear.Size = new System.Drawing.Size(50, 32);
             this.btnClear.TabIndex = 18;
             this.btnClear.Text = "CLEAR";
             this.btnClear.UseVisualStyleBackColor = false;
@@ -271,11 +272,22 @@
             this.CalcResult_txtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.CalcResult_txtBox.TextChanged += new System.EventHandler(this.CalcResult_txtBox_TextChanged);
             // 
+            // btnExt
+            // 
+            this.btnExt.Location = new System.Drawing.Point(224, 12);
+            this.btnExt.Name = "btnExt";
+            this.btnExt.Size = new System.Drawing.Size(89, 32);
+            this.btnExt.TabIndex = 21;
+            this.btnExt.Text = "EXTEND";
+            this.btnExt.UseVisualStyleBackColor = true;
+            this.btnExt.Click += new System.EventHandler(this.btnExt_Click);
+            // 
             // CalcForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(336, 446);
+            this.Controls.Add(this.btnExt);
             this.Controls.Add(this.CalcResult_txtBox);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnAddition);
@@ -332,6 +344,7 @@
         private System.Windows.Forms.Button btnAddition;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.TextBox CalcResult_txtBox;
+        private System.Windows.Forms.Button btnExt;
     }
 }
 
