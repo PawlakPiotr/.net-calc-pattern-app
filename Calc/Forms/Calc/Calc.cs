@@ -1,6 +1,8 @@
 ﻿using Calc.Forms.History;
 using Calc.Model.Data;
 using Calc.Model.Pattern;
+using Calc.Model.Pattern.Builder;
+using Calc.Model.Pattern.Builder.Calc;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,9 +22,11 @@ namespace Calc
         public Operation operation, val;
         CalcState cs;
         Form mainFormHandler;
+        Builder ECalc;
 
         public CalcForm()
         {
+            
             InitializeComponent();
 
             history = new List<KeyValuePair<string, DateTime>>();
@@ -39,6 +43,7 @@ namespace Calc
         private void CalcForm_Load(object sender, EventArgs e)
         {
             mainFormHandler = Application.OpenForms[0];
+            ECalc = new BasicCalc(mainFormHandler);
         }
 
         private void btnResult_Click(object sender, EventArgs e)
@@ -158,21 +163,18 @@ namespace Calc
 
         private void btnExt_Click(object sender, EventArgs e)
         {
-            // abstarct builder -> buttons_list, buttons, size, addButton(), setButton(), set/get_Size()
-            // getFormState() -> return 'extend' or 'basic'
-            // delete form builder -> delete all buttons 
-            if(btnExt.Text == "EXTEND")
+            if(!ECalc.GetFormState(mainFormHandler))
             {
-                mainFormHandler.Size = new Size(600, 498);
-                Button newButton = new Button();
-                newButton.Location = new Point(345,12);
-                newButton.Size = new Size(89,32);
-                this.Controls.Add(newButton);
+
+                ECalc = new ExtendedCalc(mainFormHandler);
+                ECalc.Build();
+
                 btnExt.Text = "BASIC";
             } else
             {
+                ECalc = new BasicCalc(mainFormHandler);
+                ECalc.Build();
                 btnExt.Text = "EXTEND";
-                mainFormHandler.Size = new Size(354, 498);
             }
         }
 

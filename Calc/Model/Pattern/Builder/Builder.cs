@@ -12,15 +12,21 @@ namespace Calc.Model.Pattern.Builder
     {
         Form CalcForm;
         List<Button> btnList;
-        Size size;
+        public static Size size;
         Button btn;
-
+       
         // buttons abstract methods
-        public abstract Button CreateButton();
-        public abstract void AddButtonToControls(Button btn);
+        public abstract Button CreateButton(string txt, Point location, Size size);
+        public abstract void AddButtonListener(Button btn);
+        public abstract void AddButtonToControls(Form form, Button btn);
 
         // size abstract methods
         public abstract Size SetSize(int x, int y);
         public abstract Size GetSize();
+
+        public abstract bool GetFormState(Form fr);
+
+        public abstract void Build();
+        
     }
 }

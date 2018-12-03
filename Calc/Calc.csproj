@@ -64,6 +64,8 @@
     <Compile Include="Model\Data\Operation.cs" />
     <Compile Include="Model\Data\Result.cs" />
     <Compile Include="Model\Pattern\Builder\Builder.cs" />
+    <Compile Include="Model\Pattern\Builder\Calc\BasicCalc.cs" />
+    <Compile Include="Model\Pattern\Builder\Calc\ExtendedCalc.cs" />
     <Compile Include="Model\Pattern\State\CalcState.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
